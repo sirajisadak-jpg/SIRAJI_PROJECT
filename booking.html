@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRJ Photography Studio - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>SRJ Photography Studio</h1>
+    <nav>
+      <ul>
+       <li><a href="index.html">Home</a></li>
+        <li><a href="sawiro.html">Gallery</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <h2>Book a Session</h2>
+  </div>
+
+  <main>
+
+    <!-- Booking Form -->
+    <div>
+      <form action="#" method="post">
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <label for="bookingdate">Booking Date</label>
+        <input type="date" id="bookingdate" name="bookingdate" required>
+        <label for="package">Select Package</label>
+        <select id="package" name="package" required>
+          <option value="">Choose a package</option>
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+        </select>
+
+        <label for="phototype">Photography Type</label>
+        <select id="phototype" name="phototype" required>
+          <option value="">Choose a type</option>
+          <option value="wedding">Wedding</option>
+          <option value="portrait">Portrait</option>
+          <option value="event">Event</option>
+          <option value="fashion">Fashion</option>
+          <option value="nature">Nature</option>
+          <option value="drone">Drone Photography</option>
+        </select>
+
+        <label>Gender</label>
+        
+          <input type="radio" id="gender-female" name="gender" value="female" required>
+          <label for="gender-female">Female</label>      
+          <input type="radio" id="gender-male" name="gender" value="male">
+          <label for="gender-male">Male</label>
+
+        <label>Extra Services</label>
+          <input type="checkbox" id="service-album" name="services" value="album">
+          <label for="service-album">Printed Photo Album</label>
+          <input type="checkbox" id="service-video" name="services" value="video">
+          <label for="service-video">Highlight Video</label>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write a message"></textarea>
+
+        <div class="checkbox-line">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the Terms and Conditions</label>
+        </div>
+
+        <button type="submit" class="form button">Submit Booking</button>
+
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>SRJ Photography Studio</p>
+    <p>&copy; 2026 SRJ Photography Studio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
